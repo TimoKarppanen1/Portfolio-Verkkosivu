@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+}
+
+/* Määritetään sivun leveys */
+
+article.page{
+    max-width: 100%;
+}
+
+header{
+    line-height: 1em;
+    padding: 1em;
+    background-color:white;
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
+    height: 2em;
+    padding-top: 60px;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Luodaan samanlaiset paksut mustat viivat menulle ja footerille */
+
+nav, footer{
+    height: 3em;                
+    background-color: #000000;
+    color: #F7F5EE;
+    text-align: center;
+    padding-top: 1.5em;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Menun asetuksia */
+
+ul{
+    position: relative;
+    right: 1.25em;
+}
+
+/* Menun linkkien väri*/
+
+a{
+    color: white;
+}
+
+/* Linkin väri kun sitä osoitetaan hiirellä */
+a:hover:not(.active) {
+    background-color:grey;
+}
+
+/* Etusivun korkeus ja leveys */
+section.etusivu-container{
+    height: 800px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tietoja minusta-otsikko*/ 
+.esittely-otsikko{
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Tietoja minusta otsikon alla oleva esittelyteksti */
+.esittelyteksti{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Korttien container */
+section.tiivistys{
+    position: relative;
+    left: 1.562em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: auto;
+}
+
+/* Etusivun taito kortit */
+.Kortti1, .Kortti2, .Kortti3, .Kortti4{
+    width: 125px;
+    float: left;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 10px;
+    height: 200px;
+    transition: transform .2s;
+    box-shadow: 2.5px 2.5px 2.5px;
+    background: linear-gradient(60deg, #060c21, #fff, #fff, #060c21);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Kun hiiri menee korttien päälle , niin kortit suurennetaan */
+.Kortti1:hover{
+    transform: scale(1.1);
+}
+.Kortti2:hover{
+    transform: scale(1.1);
+}
+.Kortti3:hover{
+    transform: scale(1.1);
+}
+.Kortti4:hover{
+    transform: scale(1.1);
+}
+
+.ohjelmointitaidot-otsikko,.webkehitystaidot-otsikko, .mallinnus-otsikko, .muuttaidot-otsikko {
+    font-family: 'Russo One', sans-serif;
+}
+.webkehitystaidot, .ohjelmointi-taidot, .tekninen-piirtaminen, .muut-taidot{
+    float:left;
+    margin-left: 50px;
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+/* Sivun vasenpuoli*/
+section.esittely-tiedot{
+    float: left;
+    width: 45%;
+    left: 6em;
+    position: relative;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 1em;
+    overflow: hidden;
+    height: 60em;
+    margin-left: 100px;     /* tÃ¤mÃ¤ mÃ¤Ã¤ritys tarvitaan ettÃ¤ saadaan molemmat boxit vierekkÃ¤in ja molempien boxien sisÃ¤ltÃ¶ myÃ¶s menemÃ¤Ã¤n alaspÃ¤in */
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+}
+
+/* Sivun oikeapuoli */
+section.timok{
+    width: 40%;
+    margin-top: 6em;
+    overflow: hidden;
+    height: 31.25em;
+    border-radius: 2px;    /* tÃ¤mÃ¤ mÃ¤Ã¤ritys tarvitaan ettÃ¤ saadaan molemmat boxit vierekkÃ¤in ja molempien boxien sisÃ¤ltÃ¶ myÃ¶s menemÃ¤Ã¤n alaspÃ¤in */
+    padding: 0.5em 0.5em;
+    float: right;
+}
+
+/* Kuva itsestäni */
+.timok-img{
+    border: 2px solid black;
+    right: 2.5em;
+    position: relative;
+    top: 0.5em;
+}
+
+/* PORTFOLIO SIVUN ASETUKSET */
+
+/* Portfolio sivun korkeus, leveys sekä harmaa filtteri */
+section.portfolio{
+    height: 2400px;
+    filter: grayscale(75%);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+section.portfolio-container{
+    width: 90%;
+    margin-left: 0.5em;
+    margin-top: 1.562em;
+    margin-left: 0.5em;
+    overflow: hidden;
+    height: 70em;
+    display: inline-block;    
+    border-radius: 0.5em;
+}
+
+/* CSGO Websovellus sekä Autotalli Mallisto otsikko */
+.portfolio-otsikko{
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Asetetaan fontti projektin tiedoille */
+.websovellus-tiedot{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Teknologioiden ilmaisemiseen asetetaan erilaiset fontit */
+.teknologiat{
+    margin-bottom: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Projektin dokumentaatio linkki */
+.ekalinkki{
+    color:black;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* SIVUN JAKAJAN ASETUKSET */
+.divider{
+    position: relative;
+    top: 0.5em;
+    display: flex;
+}
+
+.divider:before{
+    content: "";
+    flex: 1;
+}
+
+.divider:after{
+    content:"";
+    flex:1;
+}
+
+.gradient {
+  align-items: stretch;
+  margin: 1em 0;
+  height: 2em;
+  line-height: 2em;
+  color: white;
+  background: black;
+}
+
+.gradient:before{
+    background: linear-gradient(to right, white, black);
+}
+
+.gradient:after{
+    background: linear-gradient(to left, white, black);
+}
+
+/* Tutustu Autotalli mallistoon tästä - linkki */
+.tokalinkki{
+    position: relative;
+    top: 1.5em;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* KOULUTUS SIVU  */
+
+/* Koulutus sivun korkeus,leveys sekä harmaa filtteri */
+section.koulutus-container{
+    height: 1200px;
+    filter: grayscale(75%);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+/* Sivun vasemmanpuolinen KAMK laatikko */
+section.kamk-laatikko{
+    float: left;
+    width: 45%;
+    background-color: white;
+    margin-left: 1em; 
+    margin-top: 1.562em;
+    margin-left: 2em;
+    overflow: hidden;
+    height: 70em;
+    background: linear-gradient(40deg, #060c21, #fff, #fff, #fff,  #060c21);
+    border: 2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Sivun oikeanpuolinen OSAO laatikko */
+section.osao-laatikko{
+    float: right;
+    width: 45%;
+    background-color: white;
+    margin-top: 1.562em;
+    margin-right: 2em;
+    overflow: hidden;
+    height: 70em;
+    border: 2px solid black;
+    background: linear-gradient(50deg, #060c21, #fff, #fff, #fff, #060c21);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Koulutustiedot otsikko*/
+.koulutus-otsikko{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.osao-vuodet{
+    margin-top: 1em;
+}
+
+.kamk-vuodet{
+    margin-top: 1em;
+}
+
+/*  Työharjoittelu otsikko*/
+.tyoharj-otsikko{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1em;
+}
+
+/* Käytety teknologiat otsikko */
+.kaytetyt-teknologiat{
+    margin-top: 20px;
+}
+
+/* Polarlog Oy:n logo */
+.polar-logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.teknologiat-kaswe{
+    margin-top: 1em;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Portfoliosivun jokaisen kuvan asetukset */
+#yritys-logo{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.tyoharjoittelu-date{
+    margin-top: 1em;
+}
+
+.tyoharjoittelu-description{
+    margin-top: 2em;
+}
+
+/* tyoharjottelu container */
+.tyoharjottelu{
+    position:relative;
+    bottom: 1em;
+}
+
